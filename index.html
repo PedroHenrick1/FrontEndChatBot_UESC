@@ -1,0 +1,3357 @@
+<html lang="pt-br">
+  <head>
+    <!--metas-->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Uesc - Universidade Estadual de Santa Cruz</title>
+
+    <!--adcionais-->
+    <meta name="author" content="wmaster-samir" />
+    <meta name="generator" content="v.202401" />
+    <meta name="robots" content="index, follow" />
+    <!-- <meta http-equiv="cache-control" content="public max-age=31536000"> -->
+    <meta http-equiv="cache-control" content="public max-age=86400" />
+    <meta
+      property="og:image"
+      content="https://www.uesc.br/assets/images/branding/og-image.jpg"
+    />
+    <!--inserir conteúdo com base na url-->
+
+    <!--favicons-->
+    <link
+      rel="icon"
+      type="images/png"
+      href="https://www.uesc.br/assets/images/branding/favicon.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://www.uesc.br/assets/images/branding/apple-touch.png"
+    />
+
+    <!--vendor-->
+    <link
+      rel="stylesheet"
+      href="https://www.uesc.br/assets/vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://www.uesc.br/assets/vendor/bootstrap-icons/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://www.uesc.br/assets/vendor/animate.css/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://www.uesc.br/assets/vendor/owlcarousel/owl.carousel.css"
+    />
+
+    <!--main-->
+    <link
+      rel="stylesheet"
+      href="https://www.uesc.br/assets/css/main.css?v=20250606"
+    />
+    <link
+      rel="stylesheet"
+      href="https://www.uesc.br/assets/css/media.css?v=20250307"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!--info-->
+    <link rel="canonical" href="https://www.uesc.br/" />
+    <!--inserir conteúdo com base na url-->
+    <meta
+      name="description"
+      content="Site da Universidade Estadual de Santa Cruz (Uesc), Ilhéus-Bahia, Brasil"
+    />
+    <!--inserir conteúdo com base na url-->
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-3D720HVS9R"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-3D720HVS9R");
+    </script>
+
+    <style>
+      [vw] [vw-access-button] {
+        display: none;
+        flex-direction: row-reverse;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        overflow: hidden;
+        position: absolute;
+        border-radius: 8px;
+        transition: all 0.5s ease;
+        right: 0;
+        left: auto;
+      }
+      [vw] [vw-access-button] img {
+        max-height: 40px;
+        transition: all 0.5s ease;
+        border-radius: 8px;
+        opacity: 1 !important;
+        visibility: visible !important;
+      }
+      [vw] [vw-access-button] .vp-access-button {
+        width: 40px;
+        height: 40px;
+        z-index: 1;
+      }
+      [vw] [vw-access-button] .vp-pop-up {
+        position: absolute;
+        height: 40px;
+        min-width: 150px;
+        z-index: 0;
+        left: 0;
+        right: auto;
+      }
+      [vw] [vw-access-button]:hover {
+        width: 200px;
+      }
+      [vw] [vw-access-button].isLeft {
+        flex-direction: row;
+        left: 0;
+        right: auto;
+      }
+      [vw] [vw-access-button].isLeft .vp-pop-up {
+        left: auto;
+        right: 0;
+      }
+      [vw] [vw-access-button].isTopOrBottom:hover {
+        bottom: -20px;
+        top: 0;
+        margin-right: -80px;
+      }
+      [vw] [vw-access-button].active {
+        display: flex;
+      }
+    </style>
+    <style>
+      [vw].left [vw-plugin-wrapper] {
+        float: left;
+      }
+      [vw] [vw-plugin-wrapper] {
+        position: relative;
+        display: none;
+        width: 300px;
+        height: 100%;
+        float: right;
+        background: white;
+        -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        border-radius: 12px;
+        -moz-border-radius: 12px;
+        -webkit-border-radius: 12px;
+      }
+      [vw] [vw-plugin-wrapper].active {
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        height: 450px;
+        max-width: 100%;
+        min-height: 100%;
+      }
+    </style>
+    <style>
+      div[vw] {
+        position: fixed;
+        max-width: 95vw;
+        min-height: 40px;
+        min-width: 40px;
+        z-index: 2147483645 !important;
+        display: none;
+        margin: 10px !important;
+      }
+      div[vw].enabled {
+        display: block;
+      }
+      div[vw].active {
+        margin-top: -285px;
+      }
+      div[vw].left {
+        left: 0;
+        right: initial;
+      }
+    </style>
+  </head>
+  <body id="start">
+    <!--navegacao-->
+    <header>
+      <h1 class="visuallyhidden">Uesc -Universidade Estadual de Santa Cruz</h1>
+
+      <!--idiomas-->
+      <div class="container-fluid py-2 px-0" id="UescIdiomas">
+        <div class="container px-lg-0">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-12 d-flex">
+              <a
+                class="px-3 border-start ms-auto"
+                href="https://www.uesc.br/arint"
+                title="Internacional"
+                >Internacional</a
+              >
+              <a
+                class="px-3 border-start border-end"
+                href="https://www.uesc.br/arint_english/"
+                title="English"
+                >English</a
+              >
+              <a
+                class="px-3 border-end"
+                href="https://www.uesc.br/arint_espanhol/"
+                title="Español"
+                >Español</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--topo-->
+      <div class="container-fluid p-0" id="UescTopo">
+        <div class="container py-4 px-lg-0">
+          <div class="row justify-content-center align-items-top">
+            <div class="col-10 col-sm-9 col-lg-5">
+              <div class="d-flex align-items-center">
+                <div class="flex-shrink-0">
+                  <a
+                    class="d-inline-block me-3"
+                    href="https://www.uesc.br/"
+                    title="Brasão da Uesc"
+                    ><!--inserir conteúdo com base na url-->
+                    <img
+                      src="https://www.uesc.br/assets/images/branding/brasao-uesc.png"
+                      alt="Brasão da Uesc"
+                      width="80"
+                    />
+                  </a>
+                </div>
+                <div class="flex-grow-1">
+                  <a class="d-inline-block">
+                    <h2 class="m-0 display-5 text-white fw-bold">Uesc</h2>
+                    <h5 class="m-0 fw-medium">
+                      Universidade Estadual de Santa Cruz
+                    </h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-2 col-sm-3 col-lg-7 text-end text-white">
+              <span class="d-none d-xl-block">
+                <a
+                  class="ms-3"
+                  href="https://www.uesc.br/a_uesc/"
+                  title="A Uesc"
+                  >A Uesc</a
+                >
+                <a
+                  class="ms-3"
+                  href="https://www.uesc.br/estrutura_organizacional/"
+                  title="Estrutura Organizacional"
+                  >Estrutura Organizacional</a
+                >
+                <a
+                  class="ms-3"
+                  href="https://www.uesc.br/servidor/"
+                  title="Servidores"
+                  >Servidor</a
+                >
+                <a
+                  class="ms-3"
+                  href="https://www.uesc.br/acessoainformacao/"
+                  title="Transparência"
+                  >Transparência</a
+                >
+                <a
+                  class="ms-3"
+                  href="https://www.uesc.br/fale_conosco/"
+                  title="Contato"
+                  >Fale Conosco</a
+                >
+              </span>
+              <span class="d-none d-xl-block pt-4 social">
+                <a
+                  class="px-1"
+                  href="https://www.instagram.com/uesc.oficial/"
+                  title="Instagram"
+                  target="_blank"
+                  ><i class="bi bi-instagram" title="Instagram"></i
+                ></a>
+                <a
+                  class="px-1"
+                  href="https://www.facebook.com/Universidade-Estadual-de-Santa-Cruz-1198832966808993/"
+                  title="Facebook"
+                  target="_blank"
+                  ><i class="bi bi-facebook" title="Facebook"></i
+                ></a>
+                <a
+                  class="px-1"
+                  href="https://www.youtube.com/c/UescOficial"
+                  title="Youtube"
+                  ><i class="bi bi-play-circle" title="Youtube"></i
+                ></a>
+                <a
+                  class="px-1"
+                  href="https://mail.google.com/"
+                  title="E-mail"
+                  target="_blank"
+                  ><i class="bi bi-envelope-open" title="E-mail"></i
+                ></a>
+                <a
+                  class="px-1"
+                  href="https://www.uesc.br/mapa/"
+                  title="Mapa da Uesc"
+                  target="_blank"
+                  ><i class="bi bi-geo-alt" title="Mapa da Uesc"></i
+                ></a>
+                <a
+                  class="px-1"
+                  href="https://www.uesc.br/pesquisa"
+                  title="Pesquisa"
+                  ><i class="bi bi-search" title="Pesquisa"></i
+                ></a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="faixa"></div>
+      </div>
+      <!--navegacao-->
+      <div class="container-fluid" id="UescNav">
+        <nav class="navbar navbar-expand-xl">
+          <div class="container px-lg-0">
+            <span class="d-block d-xl-none social">
+              <a
+                href="https://www.instagram.com/uesc.oficial/"
+                title="Instagram"
+                target="_blank"
+                ><i class="bi bi-instagram" title="Instagram"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/Universidade-Estadual-de-Santa-Cruz-1198832966808993/"
+                title="Facebook"
+                target="_blank"
+                ><i class="bi bi-facebook" title="Facebook"></i
+              ></a>
+              <a href="https://www.youtube.com/c/UescOficial" title="Youtube"
+                ><i class="bi bi-play-circle" title="Youtube"></i
+              ></a>
+              <a href="https://mail.google.com/" title="E-mail" target="_blank"
+                ><i class="bi bi-envelope-open" title="E-mail"></i
+              ></a>
+              <a
+                href="https://www.uesc.br/mapa/"
+                title="Mapa da Uesc"
+                target="_blank"
+                ><i class="bi bi-geo-alt" title="Mapa da Uesc"></i
+              ></a>
+              <a href="https://www.uesc.br/pesquisa" title="Pesquisa"
+                ><i class="bi bi-search" title="Pesquisa"></i
+              ></a>
+            </span>
+            <button
+              class="navbar-toggler ms-auto"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mt-3 mt-xl-0 mb-4 mb-xl-0 me-auto">
+                <li class="nav-item d-none d-xl-block pe-3">
+                  <a
+                    class="nav-link p-0"
+                    href="https://www.uesc.br/"
+                    title="Home"
+                    ><i class="bi bi-house"></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link px-xl-3 mb-1"
+                    aria-current="page"
+                    href=" https://www.uesc.br/cursos/graduacao/"
+                    title="Graduação"
+                    >Graduação</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link px-xl-3 mb-1"
+                    href="https://www.uesc.br/cursos/pos_graduacao/"
+                    title="Pós-Graduação"
+                    >Pós-Graduação</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link px-xl-3 mb-1"
+                    href="https://proex.uesc.br/"
+                    target="_blank"
+                    title="Extensão"
+                    >Extensão</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link px-xl-3 mb-1"
+                    href="https://www.uesc.br/proape/"
+                    title="Permanência Estudantil"
+                    >Permanência Estudantil</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link px-xl-3 mb-1"
+                    href="https://nead.uesc.br"
+                    target="_blank"
+                    title="EaD"
+                    >EaD</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link px-xl-3 mb-1"
+                    href="https://www.uesc.br/ouvidoria/"
+                    title="Ouvidoria"
+                    >Ouvidoria</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link px-xl-3 mb-4 mb-xl-1"
+                    href="https://www.uesc.br/servicos/"
+                    title="Serviços"
+                    >Serviços</a
+                  >
+                </li>
+                <span class="d-block d-xl-none link-extra">
+                  <li>
+                    <a
+                      class="nav-link py-1"
+                      href="https://www.uesc.br/a_uesc/"
+                      title="A Uesc"
+                      >A Uesc</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="nav-link py-1"
+                      href="https://www.uesc.br/estrutura_organizacional/"
+                      >Estrutura organizacional</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="nav-link py-1"
+                      href="https://www.uesc.br/servidor/"
+                      >Servidor</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="nav-link py-1"
+                      href="https://www.uesc.br/acessoainformacao/"
+                      >Transparência</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="nav-link py-1"
+                      href="https://www.uesc.br/fale_conosco/"
+                      >Fale Conosco</a
+                    >
+                  </li>
+                </span>
+              </ul>
+              <!-- <div class="d-none d-xl-block">
+                    <a class="btn btn-uesc-primary" style="font-size: 16px !important;font-weight: 500 !important;" href="#acesso-rapido" target="_blank">Acesso Rápido</a>
+                </div> -->
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--conteudo do site-->
+    <main>
+      <!--destaques-->
+      <div class="container pt-3 pb-5 py-lg-5 px-lg-0" id="hero">
+        <div class="row g-2 g-lg-2">
+          <div class="col-12 col-lg-6">
+            <!-- <a class="d-block absolute destaque-link mb-2 mb-lg-2"
+        href="https://www2.uesc.br/noticias/1380/NEaDUesc-Promove-Aula-Inaugural-para-Novos-Cursos-de-Pos-Graduacao">
+        <div class="card card-lg border-0 rounded-3">
+            <img src="https://www.uesc.br/@home/destaques/aulainauguralead.webp" class="card-img object-fit-cover rounded-3">
+        </div>
+    </a> -->
+
+            <!-- <a class="d-block absolute destaque-link" href="https://www.uesc.br/processo_seletivo/sisu/">
+        <div class="card card-lg border-0 rounded-3">
+            <img src="https://www.uesc.br/@home/destaques/sisu2025-logo3.webp" class="card-img object-fit-cover rounded-3">
+        </div>
+    </a> -->
+
+            <!-- <a class="d-block absolute destaque-link" href="https://www.uesc.br/transfexterna/">
+        <div class="card card-lg border-0 rounded-3">
+            <img src="https://www.uesc.br/@home/destaques/transferencias-externas.webp" class="card-img object-fit-cover rounded-3">
+        </div>
+    </a> -->
+
+            <a
+              class="d-block absolute destaque-link d-flex flex-column h-100"
+              href="https://www2.uesc.br/noticias/1419/Uesc-sedia-etapa-final-da-COP-Mata-Atlantica-Hileia-Baiana"
+            >
+              <div
+                class="card card-lg border-0 rounded-3 d-flex flex-column h-100"
+              >
+                <img
+                  src="https://www.uesc.br/@home/destaques/cop-mata-atlantica3.webp"
+                  class="card-img object-fit-cover rounded-3"
+                />
+                <div
+                  class="position-absolute gradient w-100 h-100 rounded-3"
+                ></div>
+                <div class="position-absolute bottom-0 px-2 px-md-3 py-2">
+                  <h5>
+                    COP Mata Atlântica: etapa final acontece nesta terça-feira
+                    (dia 14) na Uesc
+                  </h5>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <a
+              class="d-block absolute destaque-link mb-2 mb-lg-2"
+              href="https://www2.uesc.br/noticias/1418/Professores-e-estudantes-da-Uesc-participam-do-II-Congresso-Internacional-Dialogos-Humanistas"
+            >
+              <div class="card card-lg border-0 rounded-3">
+                <img
+                  src="https://www.uesc.br/@home/destaques/dialogos-humanistas.webp"
+                  class="card-img object-fit-cover rounded-3"
+                />
+                <div
+                  class="position-absolute gradient w-100 h-100 rounded-3"
+                ></div>
+                <div class="position-absolute bottom-0 px-2 px-md-3 py-2">
+                  <h6>
+                    Uesc fortalece compromisso com os direitos humanos em evento
+                    internacional
+                  </h6>
+                </div>
+              </div>
+            </a>
+
+            <a
+              class="d-block absolute destaque-link"
+              href="https://www2.uesc.br/noticias/1415/Camara-Municipal-de-Ilheus-homenageia-o-Coral-da-Uesc"
+            >
+              <div class="card card-lg border-0 rounded-3">
+                <img
+                  src="https://www.uesc.br/@home/destaques/camara-coral-ios.webp"
+                  class="card-img object-fit-cover rounded-3"
+                />
+                <div
+                  class="position-absolute gradient w-100 h-100 rounded-3"
+                ></div>
+                <div class="position-absolute bottom-0 px-2 px-md-3 py-2">
+                  <h6>Câmara Municipal de Ilhéus homenageia o Coral da Uesc</h6>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <a
+              class="d-block absolute destaque-link mb-2 mb-lg-2"
+              href="https://www2.uesc.br/noticias/1412/Uesc-aproxima-ensino-medio-e-universidade-na-11a-edicao-do-Circuito-das-Profissoes"
+            >
+              <div class="card card-lg border-0 rounded-3">
+                <img
+                  src="https://www.uesc.br/@home/destaques/circuitodasprofissoes-2025.2-003.webp"
+                  class="card-img object-fit-cover rounded-3"
+                />
+                <div
+                  class="position-absolute gradient w-100 h-100 rounded-3"
+                ></div>
+                <div class="position-absolute bottom-0 px-2 px-md-3 py-2">
+                  <h6>
+                    Mais de 6 mil estudantes participam do Circuito das
+                    Profissões
+                  </h6>
+                </div>
+              </div>
+            </a>
+
+            <a
+              class="d-block absolute destaque-link"
+              href="https://www.uesc.br/transfexterna/"
+            >
+              <div class="card card-lg border-0 rounded-3">
+                <img
+                  src="https://www.uesc.br/@home/destaques/transferencias-externas.webp"
+                  class="card-img object-fit-cover rounded-3"
+                />
+              </div>
+            </a>
+
+            <!-- <a class="d-block absolute destaque-link"
+        href="https://www2.uesc.br/noticias/1402/UESC-participa-de-parceria-nacional-que-fortalece-universidades-estaduais">
+        <div class="card card-lg border-0 rounded-3">
+            <img src="https://www.uesc.br/@home/destaques/rnp.webp" class="card-img object-fit-cover rounded-3">
+            <div class="position-absolute gradient w-100 h-100 rounded-3"></div>
+            <div class="position-absolute bottom-0 px-2 px-md-3 py-2">
+                <h6>Uesc participa de parceria nacional que fortalece universidades estaduais</h6>
+            </div>
+        </div>
+    </a> -->
+          </div>
+        </div>
+      </div>
+
+      <!--noticias-->
+      <div class="container-fluid pb-5 mb-2" id="NoticiasUesc">
+        <div class="container px-0">
+          <div class="row">
+            <div class="col-12 mb-3">
+              <h2>
+                Notícias<a
+                  class="btn btn-uesc-secondary float-end"
+                  href="https://www2.uesc.br/noticias/"
+                  target="_blank"
+                  >Veja mais</a
+                >
+              </h2>
+            </div>
+
+            <div class="col-12 px-lg-2">
+              <div class="row d-flex align-content-start flex-wrap">
+                <!--noticias inner-->
+                <!--
+<p><span class="small d-block">11/06/2025</span>
+    <a href="https://boletimaccb.ccam.Uesc.br" target="_blank">Acompanhamento do Custo da Cesta Básica (ACCB), ano 22, nº 05, mai. 2025</a>
+</p>
+
+<p><span class="small d-block">02/06/2025<span class="badge text-bg-info ms-2 text-uppercase rounded-0 text-white">Proape Informa</span></span>
+    <a href="https://www.Uesc.br/proape/index.php?item=conteudo_mais_futuro.php">Edital Mais Futuro 09/2025 - Resultado Provisório dos Novos Beneficiários do Auxílio Permanência</a>
+</p>
+-->
+
+                <p>
+                  <span class="small d-block">14/10/2025</span>
+                  <a
+                    href="https://www2.uesc.br/noticias/1421/Uesc-e-UFSB-se-unem-para-levar-a-COP-30-a-defesa-da-Mata-Atlantica-sul-baiana"
+                    target="_blank"
+                    >Uesc e UFSB se unem para levar à COP-30 a defesa da Mata
+                    Atlântica sul baiana</a
+                  >
+                </p>
+
+                <p>
+                  <span class="small d-block">14/10/2025</span>
+                  <a
+                    href="https://www2.uesc.br/noticias/1420/Professor-da-Uesc-desenvolve-Atividades-de-extensao-em-Cabo-Verde"
+                    target="_blank"
+                    >Professor da Uesc desenvolve atividades de extensão em Cabo
+                    Verde</a
+                  >
+                </p>
+
+                <p>
+                  <span class="small d-block">13/10/2025</span>
+                  <a
+                    href="https://www.uesc.br/projetos/boletimriocachoeira/boletins/2025/boletim-v2n7-2025.pdf"
+                    target="_blank"
+                    >Boletim técnico de qualidade da água do Rio Cachoeira no
+                    trecho Itabuna - Ilhéus. V2, N7, Jul/Set 2025</a
+                  >
+                </p>
+
+                <p>
+                  <span class="small d-block">13/10/2025</span>
+                  <a href="https://boletimaccb.ccam.Uesc.br" target="_blank"
+                    >Acompanhamento do Custo da Cesta Básica (ACCB), ano 22, nº
+                    09, Set. 2025</a
+                  >
+                </p>
+
+                <p>
+                  <span class="small d-block">09/10/2025</span>
+                  <a
+                    href="https://www2.uesc.br/noticias/1417/Uesc-realiza-XXX-Seminario-Integrador-do-Prodema"
+                    >Uesc realiza XXX Seminário Internacional do Prodema</a
+                  >
+                </p>
+
+                <p>
+                  <span class="small d-block">09/10/2025</span>
+                  <a
+                    href="https://www2.uesc.br/noticias/1416/Uesc-promove-jornada-latino-americana-de-oficinas-em-STEM-para-meninas"
+                    >Uesc promove jornada latino-americana de oficinas em STEM
+                    para meninas</a
+                  >
+                </p>
+
+                <p>
+                  <span class="small d-block"
+                    >07/10/2025<span
+                      class="badge text-bg-info ms-2 text-uppercase rounded-0 text-white"
+                      >Proape Informa</span
+                    ></span
+                  >
+                  <a
+                    href="https://www.Uesc.br/proape/index.php?item=conteudo_mais_futuro.php"
+                    >Edital Mais Futuro 16/2025 - Resultado Provisório dos Novos
+                    Beneficiários do Auxílio Permanência</a
+                  >
+                </p>
+
+                <p>
+                  <span class="small d-block">29/09/2025</span>
+                  <a
+                    href="https://www2.uesc.br/noticias/1409/Uesc-comemora-o-Mes-da-Pessoa-Idosa"
+                    >Uesc comemora o Mês da Pessoa Idosa com atividades durante
+                    todo o mês de outubro</a
+                  >
+                </p>
+
+                <p>
+                  <span class="small d-block"
+                    >26/09/2025<span
+                      class="badge text-bg-info ms-2 text-uppercase rounded-0 text-white"
+                      >Resolução Consepe</span
+                    ></span
+                  >
+                  <a
+                    href="https://www2.uesc.br/publicacoes/resolucoes/consepe/2025#323"
+                    >Conselho Superior de Ensino, Pesquisa e Extensão aprova o
+                    Calendário Acadêmico 2026</a
+                  >
+                </p>
+
+                <p>
+                  <span class="small d-block">24/09/2025</span>
+                  <a
+                    href="https://www2.uesc.br/noticias/1406/Uesc-promove-acao-de-conscientizacao-pelo-Dia-Nacional-da-Pessoa-com-Deficiencia"
+                    >Uesc promove ação de conscientização pelo Dia Nacional da
+                    Pessoa com Deficiência</a
+                  >
+                </p>
+
+                <!-- <p><span class="small d-block">08/09/2025</span>
+    <a href="https://www2.uesc.br/noticias/1386/Uesc-fortalece-internacionalizacao-com-participacao-em-missao-academica-em-Mocambique">Uesc fortalece internacionalização com participação em missão acadêmica em Moçambique</a>
+</p>
+
+<p><span class="small d-block">05/09/2025</span>
+    <a href="https://boletimaccb.ccam.Uesc.br" target="_blank">Acompanhamento do Custo da Cesta Básica (ACCB), ano 22, nº 08, Ago. 2025</a>
+</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--eventos-->
+      <div class="container-fluid pt-5 pb-5 mb-2" id="EventosUesc">
+        <div class="container px-0">
+          <!--events-->
+          <div class="row">
+            <!--eventos destaque inner-->
+            <div class="col-12 mb-5 evento-destaque">
+              <a
+                href="https://www.uesc.br/galeria/"
+                title="50 anos do Campus"
+                class="card card-lg border-0 rounded-3 d-flex flex-column h-100 d-block d-md-none"
+              >
+                <div class="position-absolute top-0 p-3">
+                  <h6 class="mb-0">Conheça o Campus</h6>
+                </div>
+                <img
+                  class="img-fluid rounded-3"
+                  src="assets/images/home/campus-sm2.webp"
+                  loading="lazy"
+                />
+              </a>
+
+              <a
+                href="https://www.uesc.br/galeria/"
+                title="50 anos do Campus"
+                class="card card-lg border-0 rounded-3 d-flex flex-column h-100 d-none d-md-block"
+              >
+                <div class="position-absolute top-0 p-3">
+                  <h6>Conheça o Campus</h6>
+                </div>
+                <img
+                  class="img-fluid rounded-3"
+                  src="assets/images/home/conheca-o-campus.webp"
+                  loading="lazy"
+                />
+              </a>
+            </div>
+
+            <!-- <div class="col-12 mb-5">
+    <a href="https://www2.uesc.br/50anos/" target="_blank" title="50 anos do Campus"><img class="img-fluid rounded-3 d-block d-md-none" src="assets/images/home/bnn001-sm.jpg"></a>
+    <a href="https://www2.uesc.br/50anos/" target="_blank" title="50 anos do Campus"><img class="img-fluid rounded-3 d-none d-md-block" src="assets/images/home/bnn001-lg.jpg"></a>
+</div> -->
+            <div class="col-12 mb-3">
+              <h2>
+                Eventos<a
+                  class="btn btn-uesc-secondary float-end"
+                  href="https://www2.uesc.br/eventos/"
+                  target="_blank"
+                  >Veja mais</a
+                >
+              </h2>
+            </div>
+
+            <div class="col-12 px-lg-0">
+              <div class="d-flex align-content-start flex-wrap">
+                <!--eventos inner-->
+                <!--event item-->
+                <!-- <div class="d-flex align-items-center event">
+    <div class="flex-shrink-0">
+        <div class="date"><span class="number">10</span><span class="month">FEV</span></div>
+    </div>
+    <div class="flex-grow-1 ms-3">
+        <a href="https://www2.uesc.br/eventos/783/logomarca-em-comemoracao-aos-60-anos" target="_blank">Seleção da logomarca em comemoração aos 60 anos do curso de Ciências Econômicas</a>
+    </div>
+</div> -->
+
+                <!-- <div class="d-flex align-items-center event">
+    <div class="flex-shrink-0">
+        <div class="datefixo"><span class="number fw-bold" style="font-size:16px">FEV</span><span class="month">MAR</span></div>
+    </div>
+    <div class="flex-grow-1 ms-3">
+        <a href="https://www2.uesc.br/eventos/791/Visitas-ao-Observatorio-Astronomico-da-Uesc-oau" target="_blank">Visitas ao Observatório Astronômico da Uesc (OAU)</a>
+    </div>
+</div> -->
+
+                <!--event item-->
+                <div class="d-flex align-items-center event">
+                  <div class="flex-shrink-0">
+                    <div class="date">
+                      <span class="number">16</span
+                      ><span class="month">OUT</span>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <a
+                      href="https://www2.uesc.br/eventos/901/Contratos-sobre-transferencia-de-tecnologia"
+                      target="_blank"
+                      >Oficina - Contratos sobre transferência de tecnologia:
+                      dicas, desafios e perspectivas</a
+                    >
+                  </div>
+                </div>
+
+                <!--event item-->
+                <div class="d-flex align-items-center event">
+                  <div class="flex-shrink-0">
+                    <div class="date">
+                      <span class="number">16</span
+                      ><span class="month">OUT</span>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <a
+                      href="https://www2.uesc.br/eventos/906/Simposio-Direito-Tecnologia-e-Inovacao"
+                      target="_blank"
+                      >Simpósio Direito, Tecnologia e Inovação: Cidadania,
+                      Política e Governança Pública na Era Quântica</a
+                    >
+                  </div>
+                </div>
+
+                <!--event item-->
+                <div class="d-flex align-items-center event">
+                  <div class="flex-shrink-0">
+                    <div class="date">
+                      <span class="number">20</span
+                      ><span class="month">OUT</span>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <a
+                      href="https://www2.uesc.br/eventos/905/Perspectivas-para-a-Engenharia-no-contexto-da-Transicao-Energetica"
+                      target="_blank"
+                      >Palestra: Perspectivas para a Engenharia no contexto da
+                      Transição Energética</a
+                    >
+                  </div>
+                </div>
+
+                <!--event item-->
+                <div class="d-flex align-items-center event">
+                  <div class="flex-shrink-0">
+                    <div class="date">
+                      <span class="number">20</span
+                      ><span class="month">OUT</span>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <a
+                      href="https://www2.uesc.br/eventos/909/Gestao-Eficiente-da-Contratacao"
+                      target="_blank"
+                      >Curso - Gestão Eficiente da Contratação: da compra ao
+                      pagamento</a
+                    >
+                  </div>
+                </div>
+
+                <!--event item-->
+                <div class="d-flex align-items-center event">
+                  <div class="flex-shrink-0">
+                    <div class="date">
+                      <span class="number">21</span
+                      ><span class="month">OUT</span>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <a
+                      href="https://www2.uesc.br/eventos/904/Avaliacao-de-incerteza-de-medicao-na-Engenharia"
+                      target="_blank"
+                      >Minicurso: Avaliação de incerteza de medição na
+                      Engenharia</a
+                    >
+                  </div>
+                </div>
+
+                <!--event item-->
+                <div class="d-flex align-items-center event">
+                  <div class="flex-shrink-0">
+                    <div class="date">
+                      <span class="number">22</span
+                      ><span class="month">OUT</span>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <a href="https://brsa.org.br/enaber-2025/" target="_blank"
+                      >XXIII Encontro Nacional da Associação Brasileira de
+                      Estudos Regionais e Urbanos</a
+                    >
+                  </div>
+                </div>
+
+                <!--event item-->
+                <div class="d-flex align-items-center event">
+                  <div class="flex-shrink-0">
+                    <div class="date">
+                      <span class="number">29</span
+                      ><span class="month">OUT</span>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <a
+                      href="https://semanafisicauesc.wixsite.com/2025"
+                      target="_blank"
+                      >XXI Semana de Física</a
+                    >
+                  </div>
+                </div>
+
+                <!--event item-->
+                <div class="d-flex align-items-center event">
+                  <div class="flex-shrink-0">
+                    <div class="date">
+                      <span class="number">29</span
+                      ><span class="month">OUT</span>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <a
+                      href="https://www2.uesc.br/eventos/880/XXV-Semana-Juridica-2025-Direito-Memoria-e-Territorialidade"
+                      target="_blank"
+                      >XXV Semana Jurídica 2025 - Direito, Memória e
+                      Territorialidade</a
+                    >
+                  </div>
+                </div>
+
+                <!--event item-->
+                <div class="d-flex align-items-center event">
+                  <div class="flex-shrink-0">
+                    <div class="date">
+                      <span class="number">04</span
+                      ><span class="month">NOV</span>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <a
+                      href="https://propp.uesc.br/propp/sic.html"
+                      target="_blank"
+                      >31º Seminário de Iniciação Científica</a
+                    >
+                  </div>
+                </div>
+
+                <!--event item-->
+                <div class="d-flex align-items-center event">
+                  <div class="flex-shrink-0">
+                    <div class="date">
+                      <span class="number">04</span
+                      ><span class="month">NOV</span>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <a
+                      href="https://www2.uesc.br/eventos/878/8-Seminario-Institucional-do-Programa-de-Bolsa-de-Iniciacao-a-Docencia"
+                      target="_blank"
+                      >8° Seminário Institucional do Programa de Bolsa de
+                      Iniciação à Docência</a
+                    >
+                  </div>
+                </div>
+
+                <!--event item-->
+                <div class="d-flex align-items-center event">
+                  <div class="flex-shrink-0">
+                    <div class="date">
+                      <span class="number">04</span
+                      ><span class="month">NOV</span>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <a
+                      href="https://www2.uesc.br/eventos/865/12-Simposio-Academico-da-Uesc-Identidade-Territorial-e-Diversidade-nas-Ciencias"
+                      target="_blank"
+                      >12° Simpósio Acadêmico da Uesc - Identidade Territorial e
+                      Diversidade nas Ciências</a
+                    >
+                  </div>
+                </div>
+
+                <!--event item-->
+                <div class="d-flex align-items-center event">
+                  <div class="flex-shrink-0">
+                    <div class="date">
+                      <span class="number">04</span
+                      ><span class="month">NOV</span>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <a
+                      href="https://www2.uesc.br/eventos/866/2o-Seminario-do-Programa-de-Iniciacao-a-Docencia-PID"
+                      target="_blank"
+                      >2º Seminário do Programa de Iniciação à Docência - PID</a
+                    >
+                  </div>
+                </div>
+
+                <!--event item-->
+                <div class="d-flex align-items-center event">
+                  <div class="flex-shrink-0">
+                    <div class="date">
+                      <span class="number">04</span
+                      ><span class="month">NOV</span>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <a
+                      href="https://www2.uesc.br/eventos/872/4o-Seminario-de-Extensao-da-Uesc"
+                      target="_blank"
+                      >4º Seminário de Extensão da Uesc</a
+                    >
+                  </div>
+                </div>
+
+                <!--event item-->
+                <div class="d-flex align-items-center event">
+                  <div class="flex-shrink-0">
+                    <div class="date">
+                      <span class="number">06</span
+                      ><span class="month">NOV</span>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <a href="https://www.simposiogeobase.com/" target="_blank">
+                      4º Simpósio de Geotecnia - GEOBASE 2025</a
+                    >
+                  </div>
+                </div>
+
+                <!--event item-->
+                <div class="d-flex align-items-center event">
+                  <div class="flex-shrink-0">
+                    <div class="date">
+                      <span class="number">11</span
+                      ><span class="month">NOV</span>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <a
+                      href="https://www2.uesc.br/eventos/885/Curso-de-Formacao-de-Mediadores-de-leitura/"
+                      target="_blank"
+                    >
+                      Curso de Formação de Mediadores de leitura</a
+                    >
+                  </div>
+                </div>
+
+                <!--event item-->
+                <div class="d-flex align-items-center event">
+                  <div class="flex-shrink-0">
+                    <div class="date">
+                      <span class="number">13</span
+                      ><span class="month">NOV</span>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <a
+                      href="https://www2.uesc.br/eventos/910/9o-EBSB"
+                      target="_blank"
+                    >
+                      IX Encontro de Biomedicina do Sul da Bahia</a
+                    >
+                  </div>
+                </div>
+
+                <!--event item-->
+                <div class="d-flex align-items-center event">
+                  <div class="flex-shrink-0">
+                    <div class="date">
+                      <span class="number">27</span
+                      ><span class="month">NOV</span>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <a
+                      href="https://www.even3.com.br/xvi-encontro-de-educacao-quimica-da-bahia-567472/"
+                      target="_blank"
+                      >XVI Encontro de Educação Química da Bahia (Eduqui)</a
+                    >
+                  </div>
+                </div>
+
+                <!--event item-->
+                <div class="d-flex align-items-center event">
+                  <div class="flex-shrink-0">
+                    <div class="datefixo">
+                      <span class="number fw-bold" style="font-size: 16px"
+                        >MAI</span
+                      ><span class="month">NOV</span>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <a
+                      href="https://www2.uesc.br/eventos/811/Aposentadoria-e-manutencao-dos-vinculos-de-afeto-e-sociais"
+                      target="_blank"
+                      >Aposentadoria e manutenção dos vínculos de afeto e
+                      sociais</a
+                    >
+                  </div>
+                </div>
+
+                <!--event item-->
+                <div class="d-flex align-items-center event">
+                  <div class="flex-shrink-0">
+                    <div class="datefixo">
+                      <span class="number fw-bold" style="font-size: 16px"
+                        >ABR</span
+                      ><span class="month">DEZ</span>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <a
+                      href="https://www2.uesc.br/eventos/814/Projeto-Biblioteca-Viva-Tardes-no-Bosque-Aventuras-Literarias-1743508981"
+                      target="_blank"
+                      >Projeto Biblioteca Viva - Tardes no Bosque: Aventuras
+                      Literárias</a
+                    >
+                  </div>
+                </div>
+
+                <!--event item-->
+                <div class="d-flex align-items-center event">
+                  <div class="flex-shrink-0">
+                    <div class="datefixo">
+                      <span class="number fw-bold" style="font-size: 16px"
+                        >AGO</span
+                      ><span class="month">DEZ</span>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <a
+                      href="https://www2.uesc.br/eventos/862/Atelier-de-Leitura-20252"
+                      target="_blank"
+                      >Atelier de Leitura</a
+                    >
+                  </div>
+                </div>
+
+                <!--event item-->
+                <div class="d-flex align-items-center event">
+                  <div class="flex-shrink-0">
+                    <div class="datefixo">
+                      <span class="number fw-bold" style="font-size: 16px"
+                        >AGO</span
+                      ><span class="month">DEZ</span>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <a
+                      href="https://www2.uesc.br/eventos/800/Tai-Chi-Chuan-e-Meditacao-na-Uesc-1741693193"
+                      target="_blank"
+                      >Tai Chi Chuan e Meditação</a
+                    >
+                  </div>
+                </div>
+
+                <!--event item-->
+                <div class="d-flex align-items-center event">
+                  <div class="flex-shrink-0">
+                    <div class="datefixo">
+                      <span class="number fw-bold" style="font-size: 16px"
+                        >AGO</span
+                      ><span class="month">DEZ</span>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <a
+                      href="https://www2.uesc.br/eventos/871/Jiu-Jitsu-Uesc-Presencial-1753796841"
+                      target="_blank"
+                      >Jiu-Jitsu, Bem-Estar e Educação (Jiu-Jitsu Uesc)</a
+                    >
+                  </div>
+                </div>
+
+                <!--event item-->
+                <div class="d-flex align-items-center event">
+                  <div class="flex-shrink-0">
+                    <div class="datefixo">
+                      <span class="number fw-bold" style="font-size: 16px"
+                        >AGO</span
+                      ><span class="month">DEZ</span>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <a
+                      href="https://www2.uesc.br/eventos/433/Capoeira-Uesc"
+                      target="_blank"
+                      >Capoeira Uesc - Grupo Arte em Movimento</a
+                    >
+                  </div>
+                </div>
+
+                <!--event item-->
+                <div class="d-flex align-items-center event">
+                  <div class="flex-shrink-0">
+                    <div class="datefixo">
+                      <span class="number fw-bold" style="font-size: 16px"
+                        >SET</span
+                      ><span class="month">DEZ</span>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <a
+                      href="https://www2.uesc.br/eventos/873/Curso-Instrumental-de-Linguas-Estrangeiras-1754049636"
+                      target="_blank"
+                      >Curso Instrumental de Línguas Estrangeiras</a
+                    >
+                  </div>
+                </div>
+
+                <!--event item-->
+                <div class="d-flex align-items-center event">
+                  <div class="flex-shrink-0">
+                    <div class="datefixo">
+                      <span class="number fw-bold" style="font-size: 16px"
+                        >SET</span
+                      ><span class="month">DEZ</span>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <a
+                      href="https://www2.uesc.br/eventos/889/Clube-de-Xadrez-da-Uesc"
+                      target="_blank"
+                      >Clube de Xadrez da Uesc</a
+                    >
+                  </div>
+                </div>
+
+                <!--event item-->
+                <div class="d-flex align-items-center event">
+                  <div class="flex-shrink-0">
+                    <div class="datefixo">
+                      <span class="number fw-bold" style="font-size: 16px"
+                        >SET</span
+                      ><span class="month">DEZ</span>
+                    </div>
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <a
+                      href="https://www2.uesc.br/eventos/888/Conecte-em-Si-Yoga-e-Meditacao-Coletiva-1757355874"
+                      target="_blank"
+                      >Conecte em Si - Yoga e Meditação Coletiva</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--portatias da uesc-->
+      <div class="container-fluid" id="EdiPortUesc">
+        <div class="container px-0 pt-5 pb-3 mb-2">
+          <!--banners-->
+          <div class="row align-items-top g-3 mb-5">
+            <!--calendário acadêmico-->
+            <div class="col-12 col-md-6 col-lg-4">
+              <a
+                href="https://www.uesc.br/a_uesc/calendario-academico.php"
+                title="Calendário Acadêmico 2025"
+              >
+                <div
+                  class="d-flex align-items-center justify-content-center rounded-3 chamada chamada-calendario"
+                >
+                  Calendário Acadêmico
+                </div>
+              </a>
+            </div>
+
+            <!--Portal Acadêmico-->
+            <div class="col-12 col-md-6 col-lg-4">
+              <a
+                href="https://www.prograd.uesc.br/PortalSagres"
+                target="_blank"
+                title="Portal Acadêmico"
+              >
+                <div
+                  class="d-flex align-items-center justify-content-center rounded-3 chamada chamada-sagres"
+                >
+                  Portal Acadêmico
+                </div>
+              </a>
+            </div>
+
+            <!--Biblioteca Central-->
+            <div class="col-12 col-md-6 col-lg-4">
+              <a
+                href="https://www.uesc.br/biblioteca/"
+                title="Biblioteca Central"
+              >
+                <div
+                  class="d-flex align-items-center justify-content-center rounded-3 chamada chamada-biblioteca"
+                >
+                  Biblioteca Central
+                </div>
+              </a>
+            </div>
+
+            <!--processos seletivos-->
+            <div class="col-12 col-md-6 col-lg-4">
+              <a
+                href="https://www.uesc.br/selecoes_e_concursos/"
+                title="Seleções e Concursos"
+              >
+                <div
+                  class="d-flex align-items-center justify-content-center rounded-3 chamada chamada-mural"
+                >
+                  Seleções e Concursos
+                </div>
+              </a>
+            </div>
+
+            <!--Universidade para Todos - UPT-->
+            <div class="col-12 col-md-6 col-lg-4">
+              <a
+                href="https://www.uesc.br/universidadeparatodos/"
+                title="Universidade para Todos - UPT"
+              >
+                <div
+                  class="d-flex align-items-center justify-content-center rounded-3 chamada chamada-upt"
+                >
+                  Universidade para Todos - UPT
+                </div>
+              </a>
+            </div>
+
+            <!--mural-->
+            <div class="col-12 col-md-6 col-lg-4">
+              <a href="https://www.uesc.br/mural/" title="Mural">
+                <div
+                  class="d-flex align-items-center justify-content-center rounded-3 chamada chamada-processos-seletivos"
+                >
+                  Mural da Uesc
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="row justify-content-center align-items-top g-4">
+            <!--portarias-->
+            <div class="col-12 col-md-6 mb-4 portariasUesc">
+              <h2>
+                Resultados<i class="bi bi-arrow-down-up"></i>
+                <a
+                  class="btn btn-uesc-secondary float-end"
+                  href="https://www2.uesc.br/publicacoes/portarias"
+                  target="_blank"
+                  >Portarias</a
+                >
+              </h2>
+
+              <div class="boxUesc rounded-2 p-3 overflow-auto">
+                <!--portarias inner-->
+                <!-- 
+<p class="fw-medium">Sisu 2025<br>
+    <span class="badge text-bg-info me-2 text-uppercase rounded-0 text-white">Novo</span><a href="https://www.uesc.br/processo_seletivo/sisu/">Matrículas deferidas pós-recurso</a><br>
+    <a href="https://www.uesc.br/processo_seletivo/sisu/">Solicitações de matrículas deferidas - 1ª convocação</a><br>
+    <a href="https://www.uesc.br/processo_seletivo/sisu/">Resultado preliminar da heteroidentificação</a><br>
+</p>
+<p class="fw-medium mb-0"></p>
+<ul class="ms-3">
+    <li></li>
+    <li></li>
+</ul>
+<span class="badge text-bg-danger me-2 text-uppercase rounded-0">Prorrogado</span>
+-->
+
+                <!-- 29/07 
+<p class="fw-medium mb-0">Bolsas Probex</p>
+<ul class="ms-3">
+    <li>  <a href="mural\2025\resultado-recurso-preliminar-ed-120_v2.pdf" target="_blank">Retificação Resultado preliminar (Edital nº 120/25) - Resultado de recurso</li>    
+    <li>  <a href="mural\2025\probex_homologacao_edital_120-2025.pdf" target="_blank">Inscrições homologadas (Edital nº 120/25)</a> </li>
+ </ul>
+-->
+
+                <!--20/10-->
+                <p>
+                  <a
+                    href="https://www.uesc.br/ppgenf/index.php?item=conteudo_selecao.php"
+                    >Mestrado Profissional em Enfermagem - Resultado Final da
+                    Homologação da Inscrições</a
+                  >
+                </p>
+
+                <!--02/11-->
+                <p>
+                  <a
+                    href="https://www.uesc.br/profmat/index.php?item=conteudo_ena.php"
+                    >Mestrado Profissional em Matemática em Rede Nacional
+                    (Profmat), Local de prova e orientações</a
+                  >
+                </p>
+
+                <!--22/10-->
+                <p>
+                  <a
+                    href="https://mnpefuesc.wixsite.com/polo44/c%C3%B3pia-lista-preliminar-dos-inscritos"
+                    target="_blank"
+                  >
+                    Mestrado Nacional Profissional em Ensino de Física, Turma
+                    2026, Polo 44 – Inscrições homologadas</a
+                  >
+                </p>
+
+                <!--14/10-->
+                <p>
+                  <a
+                    href="https://www.uesc.br/profqui/index.php?item=conteudo_selecao.php"
+                    >Mestrado Profissional em Química (PROFQUI) - Local e
+                    horário do Exame Nacional de Seleção (ENA)</a
+                  >
+                </p>
+
+                <!-- 20/10 -->
+                <p class="fw-medium mb-0">Especializações EAD</p>
+                <ul class="ms-3">
+                  <!-- 10/10 -->
+                  <li>
+                    <a
+                      href="https://nead.uesc.br/processos-seletivos/index.php?item=2025.php"
+                      target="_blank"
+                      >Professor Formador (Edital nº 160/25) - Resultado
+                      final</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://nead.uesc.br/processos-seletivos/index.php?item=2025.php"
+                      target="_blank"
+                      >Educação e Tecnologias - Inscrições homologadas após
+                      Recursos</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://nead.uesc.br/processos-seletivos/index.php?item=2025.php"
+                      target="_blank"
+                      >Filosofia no Ensino Médio - Inscrições homologadas após
+                      Recursos</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://nead.uesc.br/processos-seletivos/index.php?item=2025.php"
+                      target="_blank"
+                      >Estudo do Atlântico e da Diáspora Africana - Inscrições
+                      homologadas após Recursos</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://nead.uesc.br/processos-seletivos/index.php?item=2025.php"
+                      target="_blank"
+                      >Formação de Consultores - Inscrições homologadas após
+                      Recursos</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://nead.uesc.br/processos-seletivos/index.php?item=2025.php"
+                      target="_blank"
+                      >Gestão Escolar - Inscrições homologadas após Recursos</a
+                    >
+                  </li>
+                </ul>
+
+                <!--20/10-->
+                <p>
+                  <a
+                    href="https://www2.uesc.br/publicacoes/portarias/arquivo/2025/10/738_2025.pdf"
+                    >Pós-Graduação em Ecologia e Conservação da Biodiversidade
+                    (Edital nº 70/25) - Convocação de candidatos
+                  </a>
+                </p>
+
+                <!--16/10-->
+                <p>
+                  <a
+                    href="https://www.uesc.br/formacaodeprofessores/index.php?item=conteudo_processoseletivo.php"
+                    >Pós-Graduação em Educação (Edital nº 158/2025) -
+                    Orientações para prova escrita
+                  </a>
+                </p>
+
+                <!--20/10-->
+                <p>
+                  <a href="https://ppgpv.uesc.br/pt/processo-seletivo"
+                    >Produção Vegetal - Resultado final</a
+                  >
+                </p>
+
+                <!--11/10-->
+                <p>
+                  <a
+                    href="https://www2.uesc.br/publicacoes/portarias/arquivo/2025/10/709_2025.pdf"
+                  >
+                    Pós-Graduação em Genética e Biologia Molecular (Edital nº
+                    108/25) – Convocação para matrícula</a
+                  >
+                </p>
+
+                <!-- 20/09 -->
+                <p class="fw-medium mb-0">
+                  Bolsa para mobilidade presencial - Resultados
+                </p>
+                <ul class="ms-3">
+                  <!-- 10/10 -->
+                  <li>
+                    <a
+                      href="https://www2.uesc.br/publicacoes/portarias/arquivo/2025/10/719_2025.pdf"
+                      target="_blank"
+                      >Universidades na Colômbia e Argentina - Edital nº 164</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www2.uesc.br/publicacoes/portarias/2025#3739"
+                      >Universidade Pedagógica Nacional e na Universidade ECCI -
+                      Edital 154</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="mural\2025\Portaria_resultado_preliminar_Edital_154_2025.pdf"
+                    >
+                      Universidades na Colômbia - Edital nº 154</a
+                    >
+                  </li>
+                </ul>
+
+                <!--16/10-->
+                <p>
+                  <a
+                    href="https://www2.uesc.br/publicacoes/portarias/arquivo/2025/10/706_2025.pdf"
+                    >Fovoco Grapiúna - Edição Janeiro/Fevereiro 2026 - Resultado
+                    final</a
+                  >
+                </p>
+
+                <!--16/10-->
+                <p>
+                  <a
+                    href="https://www2.uesc.br/publicacoes/portarias/arquivo/2025/10/704_2025.pdf"
+                    >Programa Institucional de Doutorado Sanduíche no Exterior –
+                    PDSE/CAPES - Resultado final
+                  </a>
+                </p>
+
+                <!--15/10-->
+                <p>
+                  <a href="https://www2.uesc.br/publicacoes/portarias#3729"
+                    >Resultado final da seleção de bolsistas para a Rádio
+                    Uesc</a
+                  >
+                </p>
+
+                <!-- 20/09 -->
+                <p class="fw-medium mb-0">Seleção de Professor Substituto</p>
+                <ul class="ms-3">
+                  <!-- 10/10 -->
+                  <li>
+                    <a
+                      href="https://www.uesc.br/selecao_publica/"
+                      target="_blank"
+                    >
+                      Edital nº 141/25 (DCS) - Convocação de candidatos(as)</a
+                    >
+                  </li>
+                </ul>
+
+                <!--18/09-->
+                <p>
+                  <a
+                    href="https://www2.uesc.br/eventos/866/2o-Seminario-do-Programa-de-Iniciacao-a-Docencia-PID"
+                    >2º Seminário do Programa de Iniciação à Docência (PID) -
+                    Resultado preliminar dos resumos submetidos
+                  </a>
+                </p>
+
+                <!--18/09-->
+                <p>
+                  <a
+                    href="https://www.uesc.br/ppgl/index.php?item=conteudo_selecao.php"
+                    >Pós-graduação em Letras: Linguagens e Representações -
+                    Inscrições homologadas após recurso</a
+                  >
+                </p>
+
+                <!--16/09-->
+                <p>
+                  <a
+                    href="https://www.uesc.br/ppgecm/index.php?item=conteudo_processoseletivo2026.php"
+                    >Pós-graduação em Educação em Ciências e Matemática -
+                    Inscrições homologadas após recursos
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <!--editais-->
+            <div class="col-12 col-md-6 mb-5 editaisUesc">
+              <h2>
+                Editais<i class="bi bi-arrow-down-up"></i>
+                <a
+                  class="btn btn-uesc-secondary float-end"
+                  href="https://www2.uesc.br/publicacoes/editais"
+                  target="_blank"
+                  >Veja mais</a
+                >
+              </h2>
+
+              <div class="boxUesc rounded-2 p-3 overflow-auto">
+                <!--editais inner-->
+                <!--
+<p class="fw-medium mb-0"></p>
+<ul class="ms-3">
+    <li></li>
+    <li></li>
+</ul>
+<span class="badge text-bg-danger me-2 text-uppercase rounded-0">Prorrogado</span>
+-----
+<p class="fw-medium mb-0">Seleção para Alunos Especiais 2025.2 (Mestrado )</p>
+<ul class="ms-3">
+    <li><a href="https://www.uesc.br/ppgenf/index.php?item=conteudo_selecao.php">Profissional em Enfermagem- De 14 a 18/08</a></li>
+</ul>
+-->
+
+                <p>
+                  <a
+                    href="https://www.uesc.br/profletras/index.php?item=conteudo_noticias.php"
+                    >Mestrado Profissional em Letras - Inscrições até 15/10</a
+                  >
+                </p>
+
+                <p>
+                  <span
+                    class="badge text-bg-danger me-2 text-uppercase rounded-0"
+                    >Prorrogado</span
+                  ><a href="https://proex.uesc.br/bolsas.html"
+                    >Programa Institucional de Bolsas de Extensão/Probex -
+                    Inscrições até 24/10
+                  </a>
+                </p>
+
+                <p class="fw-medium mb-0">
+                  Mestrado em Educação Física (Uesc/Uesb)
+                </p>
+                <ul class="ms-3">
+                  <li>
+                    <a
+                      href="https://www.uesc.br/selecao_publica/index.php?item=conteudo_prof_visitante.php"
+                      >Seleção de professor visitante - Inscrição de 16 a
+                      22/10</a
+                    >
+                  </li>
+                  <li>
+                    <span
+                      class="badge text-bg-danger me-2 text-uppercase rounded-0"
+                      >Retificado</span
+                    ><a
+                      href="https://www2.uesc.br/publicacoes/editais/2025#4583"
+                      >Seleção de aluno - Inscrição de 02 a 11/11</a
+                    >
+                  </li>
+                </ul>
+
+                <p class="fw-medium mb-0">
+                  Mobilidade Presencial para estudantes de graduação
+                </p>
+                <ul class="ms-3">
+                  <li>
+                    <a href="https://www2.uesc.br/publicacoes/editais/2025#4613"
+                      >Universidades Del Quindio e Libre (Colômbia) e Nacional
+                      de Hurlingham (Argentina) - Inscrição de 20 a 24/10</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www2.uesc.br/publicacoes/editais/2025#4614"
+                      >Universidades Autónoma de Baja California e Autónoma del
+                      Estado de Hidalgo (México), Universidad del Tolima
+                      (Colômbia) e Universidade Nacional del Nordeste
+                      (Argentina) - Inscrição de 20 a 24/10</a
+                    >
+                  </li>
+                </ul>
+
+                <p>
+                  <a
+                    href="https://www2.uesc.br/publicacoes/editais/arquivo/2025/10/190_2025.pdf"
+                    >Pós-Graduação em Ciências da Saúde - Isncrições de 24/10 a
+                    11/11</a
+                  >
+                </p>
+
+                <p>
+                  <a href="https://www2.uesc.br/publicacoes/editais/2025#4622"
+                    >Seleção Pública para Equipe Técnica do Programa Bahia
+                    Alfabetizada - Criança - Isncrições de 20 a 27/10</a
+                  >
+                </p>
+
+                <p>
+                  <a
+                    href="https://ufsb.edu.br/cftci/images/cftci/PPGECA/Edital_2026/Edital_PPGECA_2026.1_v2.pdf"
+                    target="_blank"
+                    >Mestrado em Engenharia Civil e Ambiental - Inscrições até
+                    31/10</a
+                  >
+                </p>
+                <p>
+                  <span
+                    class="badge text-bg-danger me-2 text-uppercase rounded-0"
+                    >Retificado</span
+                  ><a href="https://www2.uesc.br/publicacoes/editais/2025#4606"
+                    >Mestrado em História - Inscrições até 31/10</a
+                  >
+                </p>
+
+                <p>
+                  <a
+                    href="https://www2.uesc.br/publicacoes/editais/arquivo/2025/09/174_2025.pdf"
+                    target="_blank"
+                    >Mestrado em Ciência Animal - Inscrições até 01/11</a
+                  >
+                </p>
+
+                <p>
+                  <a
+                    href="https://www2.uesc.br/publicacoes/editais/2025#4595"
+                    target="_blank"
+                    >Ajudas de custo para mobilidade presencial de estudantes de
+                    graduação e mestrado em 2026.1 - Inscrições de 03 a 07/11</a
+                  >
+                </p>
+
+                <p>
+                  <a
+                    href="https://www2.uesc.br/publicacoes/editais/arquivo/2025/10/187_2025.pdf"
+                    target="_blank"
+                    >Mestrado Profissional em Matemática em Rede Nacional -
+                    Inscrições até 10/11</a
+                  >
+                </p>
+
+                <p>
+                  <a
+                    href="https://www2.uesc.br/publicacoes/editais/2025#4594"
+                    target="_blank"
+                    >Doutorado em Ciência Animal - Inscrições até 09/11</a
+                  >
+                </p>
+
+                <p>
+                  <a
+                    href="https://www.uesc.br/ppgeconomia/index.php?item=conteudo_selecao.php"
+                    target="_blank"
+                    >Mestrado e Doutorado em Economia Regional e Políticas
+                    Públicas - Inscrições de 20/10 a 09/11</a
+                  >
+                </p>
+
+                <p>
+                  <a
+                    href="https://www2.uesc.br/publicacoes/editais/arquivo/2025/10/184_2025.pdf"
+                    >Programa Modelagem Computacional em Ciência e tecnologia -
+                    Inscrições até 20/11</a
+                  >
+                </p>
+
+                <p>
+                  <a
+                    href="https://www2.uesc.br/publicacoes/editais/arquivo/2025/09/177_2025.pdf"
+                    target="_blank"
+                    >Seleção para o Museu-Vitrine das Artes Visuais - Inscrições
+                    até 28/11</a
+                  >
+                </p>
+
+                <p>
+                  <a
+                    href="https://www2.uesc.br/publicacoes/editais/arquivo/2025/08/150_2025.pdf"
+                    >Programa Institucional de Doutorado Sanduíche no Exterior
+                    (PDSE/Capes) - Inscrição para a 2ª chamada até 22/01/2026</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--rodape-->
+    <!--atalhos-->
+    <div class="container-fluid" id="acesso-rapido">
+      <div class="container py-5 px-0">
+        <div class="row pt-4 pb-3 g-2">
+          <div class="nav nav-pills mb-4 px-2" id="pills-tab" role="tablist">
+            <a
+              class="filter nav-link active"
+              id="category-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#category"
+              type="button"
+              role="tab"
+              aria-controls="alphabetical"
+              aria-selected="true"
+              >Agrupado</a
+            >
+
+            <a
+              class="filter nav-link"
+              id="alphabetical-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#alphabetical"
+              type="button"
+              role="tab"
+              aria-controls="category"
+              aria-selected="false"
+              tabindex="-1"
+              >A ➞ Z</a
+            >
+          </div>
+
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="category"
+              role="tabpanel"
+              aria-labelledby="category-tab"
+              tabindex="0"
+            >
+              <div class="row">
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/selecoes_e_concursos/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/concursos-selecoes.svg"
+                      title="Seleções e Concursos"
+                      loading="lazy"
+                    />
+                    <p>Seleções e Concursos</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www2.uesc.br/publicacoes/portarias"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/doc.svg"
+                      title="Portarias"
+                      loading="lazy"
+                    />
+                    <p>Portarias</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www2.uesc.br/publicacoes/editais"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/doc.svg"
+                      title="Editais"
+                      loading="lazy"
+                    />
+                    <p>Editais</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/publicacoes/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/resolucoes.svg"
+                      title="Resoluções Consepe e Consu"
+                      loading="lazy"
+                    />
+                    <p>RESOLUÇÕES</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/reitoria/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/reitoria.svg"
+                      title="Reitoria"
+                      loading="lazy"
+                    />
+                    <p>Reitoria</p>
+                  </a>
+                </div>
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/proreitoria/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/pro-reitorias.svg"
+                      title="Pró-Reitorias"
+                      loading="lazy"
+                    />
+                    <p>Pró-Reitorias</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/assessorias/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/assessorias.svg"
+                      title="Assessorias"
+                      loading="lazy"
+                    />
+                    <p>assessorias</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/departamentos/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/departamentos.svg"
+                      title="departamentos"
+                      loading="lazy"
+                    />
+                    <p>departamentos</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/comites_comissoes/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/comites-comissoes.svg"
+                      title="Comitês e Comissões"
+                      loading="lazy"
+                    />
+                    <p>Comitês e Comissões</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/arint/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/internacionalizacao.svg"
+                      title="Internacional"
+                      loading="lazy"
+                    />
+                    <p>INTERNACIONAL</p>
+                  </a>
+                </div>
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/ouvidoria/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/ouvidoria.svg"
+                      title="Ouvidoria"
+                      loading="lazy"
+                    />
+                    <p>OUVIDORIA</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a
+                    class=""
+                    href="https://www.prograd.uesc.br/PortalSagres/"
+                    target="_blank"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/portal-academico.svg"
+                      title="Portal Acadêmico"
+                      loading="lazy"
+                    />
+                    <p>Portal Acadêmico</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a
+                    class=""
+                    href="https://www.uesc.br/a_uesc/calendario-academico.php"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/calendario.svg"
+                      title="Calendário Acadêmico"
+                      loading="lazy"
+                    />
+                    <p>Calendário Acadêmico</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/cursos/graduacao/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/graduacao.svg"
+                      title="Graduação"
+                      loading="lazy"
+                    />
+                    <p>Graduação</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/cursos/pos_graduacao/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/graduacao2.svg"
+                      title="Pós-graduação"
+                      loading="lazy"
+                    />
+                    <p>Pós-graduação</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://proex.uesc.br/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/extensao.svg"
+                      title="Extensão"
+                      loading="lazy"
+                    />
+                    <p>Extensão</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://nead.uesc.br/" target="_blank"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/link.svg"
+                      title="EAD"
+                      loading="lazy"
+                    />
+                    <p>EDUCAÇÃO A DISTÂNCIA</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/biblioteca/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/biblioteca.svg"
+                      title="Biblioteca"
+                      loading="lazy"
+                    />
+                    <p>biblioteca</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/editora/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/editus.svg"
+                      title="Editus"
+                      loading="lazy"
+                    />
+                    <p>EDITORA DA UESC (EDITUS)</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a
+                    class=""
+                    href="https://dev-radiouesc.pantheonsite.io/"
+                    target="_blank"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/radio-uesc.svg"
+                      title="Rádio Uesc"
+                      loading="lazy"
+                    />
+                    <p>Rádio Uesc</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a
+                    class=""
+                    href="https://www.youtube.com/tvuesc"
+                    target="_blank"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/tv-uesc.svg"
+                      title="TV Uesc"
+                      loading="lazy"
+                    />
+                    <p>TV Uesc</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/jornal/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/jornal-da-uesc.svg"
+                      title="EAD"
+                      loading="lazy"
+                    />
+                    <p>JORNAL DA UESC</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/editora/periodicos/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/revistas.svg"
+                      title="Revistas Eletrônicas"
+                      loading="lazy"
+                    />
+                    <p>Portal Periódicos</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://broto.uesc.br/" target="_blank"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/brotoincubadora.svg"
+                      title="Broto Incubadora"
+                      loading="lazy"
+                    />
+                    <p>Broto Incubadora</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/projetos/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/projeto-de-pesquisa.svg"
+                      title="Projeto de Pesquisa"
+                      loading="lazy"
+                    />
+                    <p>PROJETOS DE extensão</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/hospitalveterinario/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/hospitalveterinario.svg"
+                      title="Hospital Veterinário"
+                      loading="lazy"
+                    />
+                    <p>Hospital Veterinário</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/laboratorios/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/laboratorios.svg"
+                      title="Laboratórios"
+                      loading="lazy"
+                    />
+                    <p>LABORATÓRIOS</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/nucleos/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/nucleos.svg"
+                      title="Núcleos"
+                      loading="lazy"
+                    />
+                    <p>NÚCLEOS</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/centros/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/centro-de-pesquisa.svg"
+                      title="Centros de Pesquisa"
+                      loading="lazy"
+                    />
+                    <p>CENTROS E GRUPOS DE PESQUISA</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/asplan/cpa.html"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/cpa.svg"
+                      title="CPA"
+                      loading="lazy"
+                    />
+                    <p>CPA</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/proad/selic/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/licitacoes.svg"
+                      title="Fale Conosco"
+                      loading="lazy"
+                    />
+                    <p>Setor de Licitações</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/servicos/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/servicos.svg"
+                      title="Serviços"
+                      loading="lazy"
+                    />
+                    <p>Serviços</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://sig.uesc.br" target="_blank"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/sig.svg"
+                      title="Serviços"
+                      loading="lazy"
+                    />
+                    <p>SIG UESC</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/servidor/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/servidor.svg"
+                      title="Servidor"
+                      loading="lazy"
+                    />
+                    <p>Servidor</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/acessoainformacao/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/transparencia.svg"
+                      title="Fale Conosco"
+                      loading="lazy"
+                    />
+                    <p>Transparência</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/mapa/" target="_blank"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/mapa-da-uesc.svg"
+                      title="Mapa da Uesc"
+                      loading="lazy"
+                    />
+                    <p>MAPA DA UESC</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/galeria/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/galeria.svg"
+                      title="Galeria de Fotos"
+                      loading="lazy"
+                    />
+                    <p>Galeria de Fotos</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/mural/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/mural.svg"
+                      title="Mural"
+                      loading="lazy"
+                    />
+                    <p>Mural</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/fale_conosco/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/contato.svg"
+                      title="Fale Conosco"
+                      loading="lazy"
+                    />
+                    <p>Fale Conosco</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="alphabetical"
+              role="tabpanel"
+              aria-labelledby="alphabetical-tab"
+              tabindex="0"
+            >
+              <div class="row">
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/assessorias/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/assessorias.svg"
+                      title="Assessorias"
+                      loading="lazy"
+                    />
+                    <p>assessorias</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/biblioteca/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/biblioteca.svg"
+                      title="Biblioteca"
+                      loading="lazy"
+                    />
+                    <p>biblioteca</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://broto.uesc.br/" target="_blank"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/brotoincubadora.svg"
+                      title="Broto Incubadora"
+                      loading="lazy"
+                    />
+                    <p>Broto Incubadora</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a
+                    class=""
+                    href="https://www.uesc.br/a_uesc/calendario-academico.php"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/calendario.svg"
+                      title="Calendário Acadêmico"
+                      loading="lazy"
+                    />
+                    <p>Calendário Acadêmico</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/centros/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/centro-de-pesquisa.svg"
+                      title="Centros de Pesquisa"
+                      loading="lazy"
+                    />
+                    <p>CENTROS E GRUPOS DE PESQUISA</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/comites_comissoes/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/comites-comissoes.svg"
+                      title="Comitês e Comissões"
+                      loading="lazy"
+                    />
+                    <p>Comitês e Comissões</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/asplan/cpa.html"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/cpa.svg"
+                      title="CPA"
+                      loading="lazy"
+                    />
+                    <p>CPA</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/departamentos/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/departamentos.svg"
+                      title="departamentos"
+                      loading="lazy"
+                    />
+                    <p>departamentos</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www2.uesc.br/publicacoes/editais"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/doc.svg"
+                      title="Editais"
+                      loading="lazy"
+                    />
+                    <p>Editais</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/editora/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/editus.svg"
+                      title="Editus"
+                      loading="lazy"
+                    />
+                    <p>EDITORA DA UESC (EDITUS)</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://nead.uesc.br/" target="_blank"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/link.svg"
+                      title="EAD"
+                      loading="lazy"
+                    />
+                    <p>EDUCAÇÃO A DISTÂNCIA</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://proex.uesc.br/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/extensao.svg"
+                      title="Extensão"
+                      loading="lazy"
+                    />
+                    <p>Extensão</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/fale_conosco/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/contato.svg"
+                      title="Fale Conosco"
+                      loading="lazy"
+                    />
+                    <p>Fale Conosco</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/galeria/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/galeria.svg"
+                      title="Galeria de Fotos"
+                      loading="lazy"
+                    />
+                    <p>Galeria de Fotos</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/cursos/graduacao/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/graduacao.svg"
+                      title="Graduação"
+                      loading="lazy"
+                    />
+                    <p>Graduação</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/hospitalveterinario/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/hospitalveterinario.svg"
+                      title="Hospital Veterinário"
+                      loading="lazy"
+                    />
+                    <p>Hospital Veterinário</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/arint/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/internacionalizacao.svg"
+                      title="Internacional"
+                      loading="lazy"
+                    />
+                    <p>INTERNACIONAL</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/jornal/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/jornal-da-uesc.svg"
+                      title="EAD"
+                      loading="lazy"
+                    />
+                    <p>JORNAL DA UESC</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/laboratorios/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/laboratorios.svg"
+                      title="Laboratórios"
+                      loading="lazy"
+                    />
+                    <p>LABORATÓRIOS</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/mapa/" target="_blank"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/mapa-da-uesc.svg"
+                      title="Mapa da Uesc"
+                      loading="lazy"
+                    />
+                    <p>MAPA DA UESC</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/mural/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/mural.svg"
+                      title="Mural"
+                      loading="lazy"
+                    />
+                    <p>Mural</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/nucleos/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/nucleos.svg"
+                      title="Núcleos"
+                      loading="lazy"
+                    />
+                    <p>NÚCLEOS</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/ouvidoria/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/ouvidoria.svg"
+                      title="Ouvidoria"
+                      loading="lazy"
+                    />
+                    <p>OUVIDORIA</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a
+                    class=""
+                    href="https://www.prograd.uesc.br/PortalSagres/"
+                    target="_blank"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/portal-academico.svg"
+                      title="Portal Acadêmico"
+                      loading="lazy"
+                    />
+                    <p>Portal Acadêmico</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/editora/periodicos/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/revistas.svg"
+                      title="Revistas Eletrônicas"
+                      loading="lazy"
+                    />
+                    <p>Portal Periódicos</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www2.uesc.br/publicacoes/portarias"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/doc.svg"
+                      title="Portarias"
+                      loading="lazy"
+                    />
+                    <p>Portarias</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/cursos/pos_graduacao/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/graduacao2.svg"
+                      title="Pós-graduação"
+                      loading="lazy"
+                    />
+                    <p>Pós-graduação</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/projetos/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/projeto-de-pesquisa.svg"
+                      title="Projeto de Pesquisa"
+                      loading="lazy"
+                    />
+                    <p>PROJETOS DE extensão</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/proreitoria/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/pro-reitorias.svg"
+                      title="Pró-Reitorias"
+                      loading="lazy"
+                    />
+                    <p>Pró-Reitorias</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a
+                    class=""
+                    href="https://dev-radiouesc.pantheonsite.io/"
+                    target="_blank"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/radio-uesc.svg"
+                      title="Rádio Uesc"
+                      loading="lazy"
+                    />
+                    <p>Rádio Uesc</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/reitoria/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/reitoria.svg"
+                      title="Reitoria"
+                      loading="lazy"
+                    />
+                    <p>Reitoria</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/publicacoes/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/resolucoes.svg"
+                      title="Resoluções Consepe e Consu"
+                      loading="lazy"
+                    />
+                    <p>RESOLUÇÕES</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/selecoes_e_concursos/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/concursos-selecoes.svg"
+                      title="Seleções e Concursos"
+                      loading="lazy"
+                    />
+                    <p>Seleções e Concursos</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/servicos/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/servicos.svg"
+                      title="Serviços"
+                      loading="lazy"
+                    />
+                    <p>Serviços</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/servidor/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/servidor.svg"
+                      title="Servidor"
+                      loading="lazy"
+                    />
+                    <p>Servidor</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/proad/selic/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/licitacoes.svg"
+                      title="Fale Conosco"
+                      loading="lazy"
+                    />
+                    <p>Setor de Licitações</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://sig.uesc.br" target="_blank"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/sig.svg"
+                      title="Serviços"
+                      loading="lazy"
+                    />
+                    <p>SIG UESC</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a class="" href="https://www.uesc.br/acessoainformacao/"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/transparencia.svg"
+                      title="Fale Conosco"
+                      loading="lazy"
+                    />
+                    <p>Transparência</p>
+                  </a>
+                </div>
+
+                <div
+                  class="col-4 col-sm-3 col-lg-2 col-xl-1 px-xl-2 text-center"
+                >
+                  <a
+                    class=""
+                    href="https://www.youtube.com/tvuesc"
+                    target="_blank"
+                    ><img
+                      class="img-fluid p-2 mb-1"
+                      src="https://www.uesc.br/assets/images/icones/tv-uesc.svg"
+                      title="TV Uesc"
+                      loading="lazy"
+                    />
+                    <p>TV Uesc</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--sites externos-->
+    <div class="container-fluid" id="sites-externos">
+      <div class="container py-5 px-0">
+        <div class="row g-2">
+          <!-- <div class="col-6 col-sm-4 col-lg-3 col-xl-2"><a href="https://www.uesc.br/acessoainformacao/">
+                    <img class="img-fluid rounded-2" src="https://www.uesc.br/assets/images/logos/acesso-a-informacao.png" title="Acesso a Informação"></a>
+            </div> -->
+
+          <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+            <a
+              href="http://www-periodicos-capes-gov-br.ez85.periodicos.capes.gov.br/"
+              target="_blank"
+            >
+              <img
+                class="img-fluid rounded-2"
+                src="https://www.uesc.br/assets/images/logos/capes.png"
+                title="Periódicos Capes"
+                loading="lazy"
+            /></a>
+          </div>
+          <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+            <a href="http://www.universia.com.br/" target="_blank">
+              <img
+                class="img-fluid rounded-2"
+                src="https://www.uesc.br/assets/images/logos/universia.png"
+                title="Universia"
+                loading="lazy"
+            /></a>
+          </div>
+          <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+            <a href="http://www.fapesb.ba.gov.br/" target="_blank">
+              <img
+                class="img-fluid rounded-2"
+                src="https://www.uesc.br/assets/images/logos/fapesb.png"
+                title="Fapesb"
+                loading="lazy"
+            /></a>
+          </div>
+
+          <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+            <a href="https://www.uesc.br/uescoop/">
+              <img
+                class="img-fluid rounded-2"
+                src="https://www.uesc.br/assets/images/logos/uescoop.png"
+                title="Uescoop"
+                loading="lazy"
+            /></a>
+          </div>
+
+          <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+            <a href="http://www.portaldoservidor.ba.gov.br/" target="_blank">
+              <img
+                class="img-fluid rounded-2"
+                src="https://www.uesc.br/assets/images/logos/portal-do-servidor.png"
+                title="Portal do Servidor"
+                loading="lazy"
+            /></a>
+          </div>
+
+          <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+            <a href="https://comprasnet.ba.gov.br/" target="_blank">
+              <img
+                class="img-fluid rounded-2"
+                src="https://www.uesc.br/assets/images/logos/compras-net.png"
+                title="Comprasnet"
+                loading="lazy"
+            /></a>
+          </div>
+
+          <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+            <a href="http://www.transparencia.ba.gov.br/" target="_blank">
+              <img
+                class="img-fluid rounded-2"
+                src="https://www.uesc.br/assets/images/logos/portal-transparencia.png"
+                title="Portal Transparência"
+                loading="lazy"
+            /></a>
+          </div>
+
+          <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+            <a href="http://www.portalseibahia.saeb.ba.gov.br/" target="_blank">
+              <img
+                class="img-fluid rounded-2"
+                src="https://www.uesc.br/assets/images/logos/sei-bahia.png"
+                title="Sei Bahia"
+                loading="lazy"
+            /></a>
+          </div>
+
+          <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+            <a href="https://afuscuesc.com.br/" target="_blank">
+              <img
+                class="img-fluid rounded-2"
+                src="https://www.uesc.br/assets/images/logos/afusc.png"
+                title="Afusc"
+                loading="lazy"
+            /></a>
+          </div>
+
+          <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+            <a href="http://www.adusc.org.br/" target="_blank">
+              <img
+                class="img-fluid rounded-2"
+                src="https://www.uesc.br/assets/images/logos/adusc.png"
+                title="Adusc"
+                loading="lazy"
+            /></a>
+          </div>
+
+          <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+            <a href="http://www.abruem.org.br/" target="_blank">
+              <img
+                class="img-fluid rounded-2"
+                src="https://www.uesc.br/assets/images/logos/abruem.png"
+                title="Abruem"
+                loading="lazy"
+            /></a>
+          </div>
+
+          <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+            <a href="http://www.facebook.com/dceuesc" target="_blank">
+              <img
+                class="img-fluid rounded-2"
+                src="https://www.uesc.br/assets/images/logos/dce-uesc.png"
+                title="DCE Uesc"
+                loading="lazy"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--footer-->
+    <footer>
+      <div class="container-fluid small assinatura">
+        <div class="container py-3 px-0">
+          <div class="row justify-content-center align-items-center">
+            <div
+              class="d-block d-lg-flex col-12 col-lg-10 text-center text-lg-start"
+            >
+              <div class="flex-shrink-0">
+                <a
+                  class="d-inline-block my-3 my-lg-0"
+                  href="https://www.uesc.br/"
+                  ><!--inserir conteúdo com base na url-->
+                  <img
+                    src="https://www.uesc.br/assets/images/branding/brasao-uesc.png"
+                    alt="Brasão da Uesc"
+                    title="Brasão da Uesc"
+                    width="50"
+                  />
+                </a>
+              </div>
+
+              <div class="flex-grow-1 ms-3">
+                <p class="m-0 text-white">
+                  <span class="fw-semibold">CAMPUS SOANE NAZARÉ DE ANDRADE</span
+                  ><br />
+                  Rodovia Jorge Amado, Km 16, Bairro Salobrinho<br />
+                  CEP 45662-900. Ilhéus-Bahia
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-2 py-4 pe-md-0 text-center text-lg-end">
+              <a
+                href="https://www.ba.gov.br/"
+                target="_blank"
+                title="Governo do Estado da Bahia"
+                ><img
+                  class="rounded-1"
+                  src="https://www.uesc.br/assets/images/logos/governo-da-bahia_cor-1024x328.png"
+                  alt="Governo do Estado da Bahia"
+                  width="120"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row text-center copy">
+          <div class="col-12 text-center text-light">
+            <p class="m-0 py-4">
+              Uesc © 2025.
+              <a href="https://www.uesc.br/nucleo-web/" title="Núcleo Web"
+                >Núcleo Web</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--gotop-->
+    <a href="#start" class="go-top" title="Topo" style="display: none">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        class="bi bi-arrow-up-short"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"
+        ></path>
+      </svg>
+    </a>
+
+    <!--div-libras-->
+    <div
+      vw=""
+      class="enabled"
+      style="
+        left: initial;
+        right: 0px;
+        top: 50%;
+        bottom: initial;
+        transform: translateY(calc(-50% - 10px));
+      "
+    >
+      <div vw-access-button="" class="active" style="">
+        <img
+          class="vp-access-button"
+          data-src="assets/access_icon.svg"
+          alt="Conteúdo acessível em Libras usando o VLibras Widget com opções dos Avatares Ícaro, Hosana ou Guga."
+          src="https://vlibras.gov.br/app//assets/access_icon.svg"
+        />
+        <img
+          class="vp-pop-up"
+          data-src="assets/access_popup.jpg"
+          alt="Conteúdo acessível em Libras usando o VLibras Widget com opções dos Avatares Ícaro, Hosana ou Guga."
+          src="https://vlibras.gov.br/app//assets/access_popup.jpg"
+        />
+      </div>
+      <div vw-plugin-wrapper="">
+        <div vp="">
+          <div vp-box=""></div>
+          <div vp-message-box=""></div>
+          <div vp-settings=""></div>
+          <div vp-dictionary=""></div>
+          <div vp-settings-btn=""></div>
+          <div vp-info-screen=""></div>
+          <div vp-suggestion-screen=""></div>
+          <div vp-translator-screen=""></div>
+          <div vp-more-options-screen=""></div>
+          <div vp-emotions-tooltip=""></div>
+          <div vp-main-guide-screen=""></div>
+          <div vp-suggestion-button=""></div>
+          <div vp-rate-box=""></div>
+          <div vp-change-avatar=""></div>
+          <div vp-aux-controls=""></div>
+          <div vp-controls=""></div>
+          <span vp-click-blocker=""></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chatbot Floating Button and Chat Window -->
+    <div id="chatbot-container">
+      <div id="chatbot-avatar" title="Fale com o robô assistente da UESC">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+          />
+        </svg>
+      </div>
+      <div id="chatbot-window" class="chatbot-hidden">
+        <div id="chatbot-header">
+          <h3>Assistente Virtual UESC</h3>
+          <button id="chatbot-close" type="button" aria-label="Fechar chat">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div id="chatbot-messages" role="log" aria-live="polite">
+          <div class="chatbot-message bot">
+            <div class="message-content">
+              <span
+                >Olá! Sou o assistente virtual da UESC. Como posso ajudar você
+                hoje?</span
+              >
+            </div>
+          </div>
+        </div>
+        <form id="chatbot-form">
+          <div class="chatbot-input-container">
+            <input
+              type="text"
+              id="chatbot-input"
+              placeholder="Digite sua mensagem..."
+              autocomplete="off"
+              maxlength="500"
+              required
+            />
+            <button
+              type="submit"
+              id="chatbot-send"
+              aria-label="Enviar mensagem"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!--vendor-->
+    <script src="https://www.uesc.br/assets/vendor/jquery/jquery-3.7.1.min.js"></script>
+    <script src="https://www.uesc.br/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.uesc.br/assets/vendor/owlcarousel/owl.carousel.js"></script>
+
+    <!--custom-->
+    <script src="https://www.uesc.br/assets/js/custom.js?v=20250307"></script>
+
+    <!-- importante tabbled panels antigo -->
+    <script
+      src="https://www.uesc.br/assets/SpryAssets/SpryTabbedPanels.js"
+      type="text/javascript"
+    ></script>
+
+    <!--script libras-->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+
+    <!-- Chatbot Script -->
+    <script src="chatbot.js"></script>
+  </body>
+</html>
